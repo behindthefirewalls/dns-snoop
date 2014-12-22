@@ -1,8 +1,11 @@
 dns-snoop
 =========
-Beta version:
+///Beta version
 
-For a domain list given, dns-snoop allows you to look for suspicious DNS request. You just need to provide a CSV file with the domains requested in your network to figure out if some of you hosts could be compromised.
+For a list of domains given, dns-snoop allows you to look for suspicious DNS request. You just need to provide a CSV file with the domains requested in your network to figure out if some of your hosts could be compromised. We are able to export this file with the requested domains from our event correlations.
+
+Our CSV file has one domain per line in this format: "www.domain.org","" Notice you can change the line 144 of dns-snoop.py to addapt the script to your CSV file to split the domains as you want.
+
 
 	usage: dns-snoop.py [-h] [-f FILE] [-w] [-d] [-ds] [-n] [-nl]
 	
